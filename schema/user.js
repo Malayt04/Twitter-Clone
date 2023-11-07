@@ -34,7 +34,7 @@ const userSchema=mongoose.Schema({
 
    profilePic:{
     type:String,
-    default:"/images/profilePic.png"
+    default:"/images/ProfilePic.jpg"
    }
 
 },{

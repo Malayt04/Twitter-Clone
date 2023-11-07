@@ -1,6 +1,7 @@
 :root{
     --LightGrey:rgb(230,236,240);
     --Spacing:15px;
+    --GreyLight:rgb(127, 134, 139);
 }
 
 nav{
@@ -56,3 +57,47 @@ h1{
     margin: 0;
 }
 
+.postFormContainer{
+    display:flex;
+    padding:var(--spacing);
+    border-bottom: 10px solid var(--LightGrey);
+    flex-shrink: 0;
+}
+
+.userImageContainer{
+    width: 50px;
+    height: 50px;
+}
+
+.userImageContainer img{
+   width: 100%;
+   border-radius: 50%;
+   background-color: #fff;
+}
+
+.textAreaContainer{
+flex:1;
+padding-left: var(--Spacing);
+}
+
+.textAreaContainer textarea{
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 19px;
+
+    }
+
+#submitPostButton{
+    margin-bottom: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+    padding: 7px 15px;
+}
+
+#submitPostButton:disabled{
+    background-color: var(--GreyLight);
+    color: black;
+}
